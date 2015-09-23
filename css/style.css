@@ -1386,10 +1386,17 @@ body .section.clear {
   padding-right: 10px; }
 
 .thumbnail {
-  height: 150px;
+  height: 250px;
   border-width: 3px;
   border-radius: 0;
-  border-color: #ddd; }
+  border-color: #ddd;
+  padding: 15px; }
+  .thumbnail p {
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10px; }
+
+.client_name h4, .client_name i {
+  color: #a1a1d4 !important; }
 
 .thumbnail img {
   position: relative;
@@ -1413,6 +1420,40 @@ body .section.clear {
   -khtml-opacity: 1;
   opacity: 1; }
 
+/* Carousel Styles */
+.carousel-control.left,
+.carousel-control.right {
+  width: 0;
+  background-image: none;
+  -webkit-transition: .3s;
+  transition: .3s; }
+
+.carousel-control.left i,
+.carousel-control.right i {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  height: 60px;
+  font-size: 60px;
+  text-shadow: none;
+  color: #999; }
+
+.section.dark .carousel-control.left i,
+.section.dark .carousel-control.right i {
+  color: #eee; }
+
+.carousel-control.left i {
+  left: -30px; }
+
+.carousel-control.right i {
+  right: -30px; }
+
+@media (max-width: 768px) {
+  .carousel-control.left i {
+    left: 0; }
+
+  .carousel-control.right i {
+    right: 0; } }
 @media (max-width: 992px) {
   #clients .row [class*="col-"] {
     margin-bottom: 20px; }
