@@ -1386,7 +1386,7 @@ body .section.clear {
   padding-right: 10px; }
 
 .thumbnail {
-  height: 250px;
+  height: 225px;
   border-width: 3px;
   border-radius: 0;
   border-color: #ddd;
@@ -1448,18 +1448,27 @@ body .section.clear {
 .carousel-control.right i {
   right: -30px; }
 
-@media (max-width: 768px) {
-  .carousel-control.left i {
-    left: 0; }
-
-  .carousel-control.right i {
-    right: 0; } }
+@media (max-width: 1096px) {
+  .thumbnail {
+    height: 225px; } }
 @media (max-width: 992px) {
   #clients .row [class*="col-"] {
     margin-bottom: 20px; }
 
   .thumbnail {
-    height: 70px; } }
+    height: 275px; } }
+@media (max-width: 768px) {
+  .carousel-control.left i {
+    left: 0; }
+
+  .carousel-control.right i {
+    right: 0; }
+
+  .thumbnail {
+    height: 225px; } }
+@media (max-width: 480px) {
+  .thumbnail {
+    height: 250px; } }
 /*  PORTFOLIO
 *    stylings for portfolio
 *    MixItUp

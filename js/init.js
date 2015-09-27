@@ -1,9 +1,4 @@
-/*
- * Made by WebDesignCrowd
- * http://webdesigncrowd.com
- *
- */
- 
+
 (function($){
 	$(function(){
 	  
