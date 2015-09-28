@@ -1,27 +1,4 @@
-@font-face {
-  font-family: 'homestead_display';
-  src: url("../fonts/homestead-display-webfont.eot");
-  src: url("../fonts/homestead-display-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/homestead-display-webfont.woff2") format("woff2"), url("../fonts/homestead-display-webfont.woff") format("woff"), url("../fonts/homestead-display-webfont.ttf") format("truetype"), url("../fonts/homestead-display-webfont.svg#homestead_display") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'homestead_inlineinline';
-  src: url("../fonts/homestead-inline-webfont.eot");
-  src: url("../fonts/homestead-inline-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/homestead-inline-webfont.woff2") format("woff2"), url("../fonts/homestead-inline-webfont.woff") format("woff"), url("../fonts/homestead-inline-webfont.ttf") format("truetype"), url("../fonts/homestead-inline-webfont.svg#homestead_inlineinline") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'homestead_oneone';
-  src: url("../fonts/homestead-one-webfont.eot");
-  src: url("../fonts/homestead-one-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/homestead-one-webfont.woff2") format("woff2"), url("../fonts/homestead-one-webfont.woff") format("woff"), url("../fonts/homestead-one-webfont.ttf") format("truetype"), url("../fonts/homestead-one-webfont.svg#homestead_oneone") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'homestead_regular';
-  src: url("../fonts/homestead-regular-webfont.eot");
-  src: url("../fonts/homestead-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/homestead-regular-webfont.woff2") format("woff2"), url("../fonts/homestead-regular-webfont.woff") format("woff"), url("../fonts/homestead-regular-webfont.ttf") format("truetype"), url("../fonts/homestead-regular-webfont.svg#homestead_regular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?skvg2i");
@@ -192,7 +169,7 @@ hr {
   margin: 0; }
 
 a {
-  font-family: "homestead_regular", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
   font-weight: normal;
   -webkit-transition: color .3s;
   transition: color .3s; }
@@ -847,7 +824,7 @@ label {
   font-size: 15px; }
 
 .navbar .container a.navbar-brand {
-  font-family: "homestead_regular", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #444;
   font-weight: bold;
@@ -961,7 +938,7 @@ label {
   background-color: #f4f4f4; }
 
 .navbar .navbar-nav li a {
-  font-family: "homestead_regular", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
   height: 55px;
   display: block;
   font-size: 12px;
@@ -1138,7 +1115,7 @@ body .section.clear {
 
 .section h2.title {
   font-size: 34px;
-  font-family: "homestead_regular", Helvetica, Arial, sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif, Arial, Helvetica, sans-serif;
   font-weight: bold;
   display: inline-block; }
 
@@ -1949,7 +1926,7 @@ ACCORDION
 #footer h3 {
   color: #fff;
   font-weight: normal;
-  font-family: "homestead_regular", Helvetica, Arial, sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif, Arial, Helvetica, sans-serif;
   text-align: left;
   margin: 10px 0;
   font-size: 16px; }
@@ -1962,7 +1939,7 @@ ACCORDION
   margin-bottom: 5px; }
 
 #footer a.logo {
-  font-family: "homestead_regular", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
   float: left;
   color: #fff;
   font-weight: bold;

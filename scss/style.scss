@@ -1,7 +1,8 @@
 @import 'fonts';
 @import 'variables';
 $firstfont: 'Lato', sans-serif;
-$secondfont: 'homestead_regular', Helvetica, Arial, sans-serif;
+$secondfont: 'Montserrat', Helvetica, Arial, sans-serif;
+
 html, body {
 font-family: $firstfont, Arial, Helvetica, sans-serif;height: 100%; }
 body { color: #333; }
