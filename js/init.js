@@ -1,7 +1,12 @@
-
+/*
+ * Made by WebDesignCrowd
+ * http://webdesigncrowd.com
+ *
+ */
+ 
 (function($){
-	$(function(){
-	  
+  $(function(){
+    
     var navbarHeight = 80;
 
     // Slide in Functionality 
@@ -17,10 +22,10 @@
       $('body').scrollspy({ offset: navbarHeight+10, target: '#navbar' });
     });
 
-	  // Home
-	  $('.carousel').carousel({
+    // Home
+    $('.carousel').carousel({
         pause: false,
-        interval: 8000
+        interval: 20000
     });
 
     // Navbar Affix
@@ -87,7 +92,7 @@
     $("form .form-control").blur(function() {
       $(this).siblings("label").first().children("i").first().css({"color": "transparent", "left": "-20px"});
     });
-	  
+    
     // Blog Masonry
     var $container = $('.masonry-grid');
     
@@ -107,6 +112,7 @@
     });
 
 
+
     // Accordion Active Toggling 
     $("a[data-toggle='collapse']").click(function() {
       if ($(this).parent().parent(".panel-heading").hasClass("active")) {
@@ -118,30 +124,8 @@
       }
     });
 
-
-
-    // CONTACT PAGE
-
-      function initialize() {
-        var myLatLong = new google.maps.LatLng(40.7556,-73.9797);
-        var mapOptions = {
-          center: myLatLong,
-          scrollwheel: false,
-          zoom: 13
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-        // To add the marker to the map, use the 'map' property
-        var marker = new google.maps.Marker({
-            position: myLatLong,
-            map: map,
-            title:"123 Broadway"
-        });
-
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
     
     
 
-	}); // end of document ready
+  }); // end of document ready
 })(jQuery); // end of jQuery name space

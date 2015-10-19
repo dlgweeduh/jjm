@@ -440,9 +440,6 @@ table.nav-tabs {
   color: #444;
   background-color: #f0f0f0; }
 
-.nav-tabs > li a {
-  padding: 20px 40px; }
-
 .nav-tabs > li.active > a {
   background-color: default; }
 
@@ -500,8 +497,11 @@ table.nav-tabs {
     width: auto; } }
 /* Colors */
 /* Body Background Color */
-.tab-content, .section, .parallax {
-  /*background-color: #7db9e8;*/ }
+.tab-content {
+  background-color: #fff;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd; }
 
 #home {
   background: #94d3e0;
@@ -1363,7 +1363,7 @@ body .section.clear {
   padding-right: 10px; }
 
 .thumbnail {
-  height: 225px;
+  height: 100%;
   border-width: 3px;
   border-radius: 0;
   border-color: #ddd;
@@ -1427,7 +1427,7 @@ body .section.clear {
 
 @media (max-width: 1096px) {
   .thumbnail {
-    height: 225px; } }
+    height: 100%; } }
 @media (max-width: 992px) {
   #clients .row [class*="col-"] {
     margin-bottom: 20px; }
@@ -1442,10 +1442,10 @@ body .section.clear {
     right: 0; }
 
   .thumbnail {
-    height: 225px; } }
+    height: 100%; } }
 @media (max-width: 480px) {
   .thumbnail {
-    height: 250px; } }
+    height: 100%; } }
 /*  PORTFOLIO
 *    stylings for portfolio
 *    MixItUp
@@ -1626,7 +1626,6 @@ img.placeholder {
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: .3s;
   transition: .3s;
-  /* Cross Browser Opacity */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   -moz-opacity: 0;
@@ -1698,7 +1697,63 @@ img.placeholder {
   to {
     transform: translateY(0);
     opacity: 1; } }
-.masonry-grid.effect-3 li.animate {
+.masonry-grid2 {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.masonry-grid2 .item .image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative; }
+
+.masonry-grid2 .item .image img {
+  width: 100%; }
+
+.masonry-grid2 .item .description {
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  background-color: #f9f9f9; }
+
+.section.gray .masonry-grid2 .item .description {
+  background-color: #fff; }
+
+.masonry-grid2 .item .description h2 {
+  color: #555;
+  text-align: left;
+  font-size: 19px;
+  margin: 0 0 15px 0;
+  -webkit-transition: color .3s;
+  transition: color .3s; }
+
+.masonry-grid2 .item .description p {
+  color: #777; }
+
+/* Grid Loading Effect ~ Codrops */
+.masonry-grid2 {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0; }
+
+.masonry-grid2 li {
+  display: block;
+  float: left;
+  padding: 7px;
+  width: 33.3%; }
+
+.masonry-grid2 li.shown, .no-js .masonry-grid2 li, .no-cssanimations .masonry-grid2 li {
+  opacity: 1; }
+
+.masonry-grid2 li a, .masonry-grid2 li img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%; }
+
+/* Effect 2: Move Up */
+.masonry-grid2.effect-2 li.animate {
   -webkit-transform: translateY(200px);
   -moz-transform: translateY(200px);
   transform: translateY(200px);
@@ -1720,9 +1775,15 @@ img.placeholder {
     opacity: 1; } }
 @media screen and (max-width: 900px) {
   .masonry-grid li {
+    width: 50%; }
+
+  .masonry-grid2 li {
     width: 50%; } }
 @media screen and (max-width: 400px) {
   .masonry-grid li {
+    width: 100%; }
+
+  .masonry-grid2 li {
     width: 100%; } }
 /*  TEAM
 *    stylings for about us section

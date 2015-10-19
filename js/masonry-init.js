@@ -5,8 +5,8 @@
  */
  
 (function($){
-	$(function(){
-	  
+  $(function(){
+    
     
     // Blog Masonry
     var $container = $('.masonry-grid');
@@ -20,5 +20,5 @@
     });
 
 
-	}); // end of document ready
+  }); // end of document ready
 })(jQuery); // end of jQuery name space
